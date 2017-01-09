@@ -17,7 +17,12 @@ namespace FlashCards
 
         private void GoToNewDeck(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(FlashCards.NewDeckPage));
+            this.Frame.Navigate(typeof(NewDeckPage));
+        }
+
+        private void ChooseExistingDeck(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OpenDeck));
         }
     }
 }

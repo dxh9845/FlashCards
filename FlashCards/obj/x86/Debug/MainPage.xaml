@@ -9,12 +9,20 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Text="FlashCards" Style="{ThemeResource HeaderTextBlockStyle}"></TextBlock>
+            <TextBlock TextAlignment="Center" Text="FlashCards" Style="{ThemeResource HeaderTextBlockStyle}"></TextBlock>
             <StackPanel Orientation="Horizontal">
-                <Button x:ConnectionId='1' x:Name="nameButton"                     Padding="30">
+                <Button x:ConnectionId='1' x:Name="nameButton"                     
+                        Padding="30"
+                        Margin="5">
                     <StackPanel>
                         <SymbolIcon Symbol="Edit"></SymbolIcon>
                         <TextBlock Text="Create a new deck" FontSize="20"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='2' x:Name="chooseButton"                            Padding="30">
+                    <StackPanel>
+                        <SymbolIcon Symbol="OpenLocal"></SymbolIcon>
+                        <TextBlock Text="Open your deck" FontSize="20"></TextBlock>
                     </StackPanel>
                 </Button>
             </StackPanel>

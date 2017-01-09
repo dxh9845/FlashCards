@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-09T04:54:19.123</Modified>
+      <Modified>2017-01-09T06:58:32.845</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\FlashCards.exe">
       <PackagePath>entrypoint\FlashCards.exe</PackagePath>
-      <Modified>2017-01-09T04:54:17.855</Modified>
+      <Modified>2017-01-09T06:58:31.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\danie\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -492,9 +492,9 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T03:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\Images\IMG_20160924_161457.png">
-      <PackagePath>Images\IMG_20160924_161457.png</PackagePath>
-      <Modified>2017-01-03T20:37:53.466</Modified>
+    <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2017-01-03T20:27:38.579</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -530,13 +530,9 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-01-03T19:59:30.814</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-01-03T20:27:38.579</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\FlashCards.xr.xml">
       <PackagePath>FlashCards.xr.xml</PackagePath>
-      <Modified>2017-01-09T03:20:06.132</Modified>
+      <Modified>2017-01-09T06:44:09.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -545,11 +541,11 @@
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-09T04:54:18.823</Modified>
+      <Modified>2017-01-09T06:44:10.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\Core\FlashCards.exe">
       <PackagePath>FlashCards.exe</PackagePath>
-      <Modified>2017-01-09T04:54:19.115</Modified>
+      <Modified>2017-01-09T06:58:32.839</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

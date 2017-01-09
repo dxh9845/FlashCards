@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="FlashCards.OpenDeck"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlashCards"
+    xmlns:data="using:Windows.Storage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0">
+            <TextBlock TextAlignment="Center" Text="Choose your deck" Style="{ThemeResource HeaderTextBlockStyle}"></TextBlock>
+        </StackPanel>
+        <GridView x:Name="DeckGrid" Grid.Row="1" Margin="20" IsItemClickEnabled="True" ItemClick="GoToDeck">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:StorageFolder">
+                    <StackPanel Margin="10">
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE188;" FontSize="50" />
+                        <TextBlock FontSize="25" Text="{x:Bind Name}"></TextBlock>
+                        <TextBlock FontSize="20" Text="{x:Bind Properties}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Page>

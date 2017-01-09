@@ -36,14 +36,32 @@ namespace FlashCards
 
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
-            string text = e.Parameter.ToString();
-            _FolderName = text;
+            int CardNum, CardTotalNum;
+            // Are we coming from OpenDeck?
+            PageStackEntry lastPage = this.Frame.BackStack[this.Frame.BackStackDepth - 1];
+            if (lastPage.SourcePageType == typeof(OpenDeck))
+            {
+                StorageFolder folder = (StorageFolder) e.Parameter;
+                _FolderName = folder.Name;
+                IReadOnlyList<StorageFile> files = await folder.GetFilesAsync();
+                CardTotalNum = files.Count / 2;
+                CardNum = 1;
 
-            int CardNum = int.Parse(CardNumber.Text);
-            int CardTotalNum = int.Parse(CardTotal.Text);
-            // Check to enable the Forward/Back buttons
+                // Set the XAML elments
+                CardNumber.Text = CardNum.ToString();
+                CardTotal.Text = CardTotalNum.ToString();
+                LoadCard(1);
+
+            } else
+            {
+                _FolderName = e.Parameter.ToString();
+                // Check to enable the Forward/Back buttons
+                CardNum = int.Parse(CardNumber.Text);
+                CardTotalNum = int.Parse(CardTotal.Text);
+            }
+
             EnableButtonCheck(CardNum, CardTotalNum);
         }
 

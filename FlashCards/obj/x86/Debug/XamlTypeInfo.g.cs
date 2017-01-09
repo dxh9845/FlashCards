@@ -132,19 +132,21 @@ namespace FlashCards.FlashCards_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "FlashCards.CreateFlashCard";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "FlashCards.NewDeckPage";
             _typeNameTable[4] = "FlashCards.MainPage";
+            _typeNameTable[5] = "FlashCards.OpenDeck";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::FlashCards.CreateFlashCard);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::FlashCards.NewDeckPage);
             _typeTable[4] = typeof(global::FlashCards.MainPage);
+            _typeTable[5] = typeof(global::FlashCards.OpenDeck);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -182,6 +184,7 @@ namespace FlashCards.FlashCards_XamlTypeInfo
         private object Activate_0_CreateFlashCard() { return new global::FlashCards.CreateFlashCard(); }
         private object Activate_3_NewDeckPage() { return new global::FlashCards.NewDeckPage(); }
         private object Activate_4_MainPage() { return new global::FlashCards.MainPage(); }
+        private object Activate_5_OpenDeck() { return new global::FlashCards.OpenDeck(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -218,6 +221,13 @@ namespace FlashCards.FlashCards_XamlTypeInfo
             case 4:   //  FlashCards.MainPage
                 userType = new global::FlashCards.FlashCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  FlashCards.OpenDeck
+                userType = new global::FlashCards.FlashCards_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_OpenDeck;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
