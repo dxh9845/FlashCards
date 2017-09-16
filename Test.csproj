@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B52C5244-E287-44C0-9337-ED580DDCB624}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Test</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\00\ae6fbdc853981bcdab8c91444365840ecd4cac" />
+    <None Include=".git\objects\02\3e7f1feda78d5100569825acedfd213a0d84e9" />
+    <None Include=".git\objects\03\069d8b254092ffdcdc5a22c11634d94c01ae14" />
+    <None Include=".git\objects\03\e38cdebbdf6d2ba26a0be313c7105d41cbc412" />
+    <None Include=".git\objects\04\dec5e232876f484756ab2f5902a475a216d7fa" />
+    <None Include=".git\objects\06\216e1c8a0fbe85e1595fbc3b345eb3b9142d3c" />
+    <None Include=".git\objects\06\4cb903b37a05a268162ad84174090e1bcfe586" />
+    <None Include=".git\objects\06\88ef3f2b27b4d798e53f7e85a9776179de3428" />
+    <None Include=".git\objects\07\44cdc5961b113538cf7ec01dfa987bca06690b" />
+    <None Include=".git\objects\07\77675f58dc77c69a361fc1a1a9d769f844e08d" />
+    <None Include=".git\objects\07\7f6abc0ba33b5ebab9777e37baeeb53aae6ef5" />
+    <None Include=".git\objects\07\9f8c9a6f49e286703a7e282690d1ad17d85301" />
+    <None Include=".git\objects\07\c412ad2bbbf477fd183703322e6fb0c6dcde61" />
+    <None Include=".git\objects\08\3d7048b9873c6e3751acc81dfa92aa1de0f743" />
+    <None Include=".git\objects\09\562dcc8541a8c2372527e47c20f3cc8a37f637" />
+    <None Include=".git\objects\0a\1e5c7f021bb3b95e0d5fbbea4db81c7bd9cb08" />
+    <None Include=".git\objects\0a\9082368354059890656dd37af7fb308eadff0f" />
+    <None Include=".git\objects\0d\196f40ac71c1ee466e245b49d4690d219ddb42" />
+    <None Include=".git\objects\0d\312e46f76910a4e64b204eededee64d5e0b27e" />
+    <None Include=".git\objects\0d\67970d43df35d1fd40424f7fcb6688a13660f4" />
+    <None Include=".git\objects\0e\5a8e3b8f39417daea566bcdd1f77f5b1c616fd" />
+    <None Include=".git\objects\12\46ec7af52ae9baa04ad8d4660f10582d03a405" />
+    <None Include=".git\objects\13\67e78bec771fe1d6a7bc325beb27c3ffa69cb0" />
+    <None Include=".git\objects\14\60241c7d714e388a111b5df5fde697edf9a009" />
+    <None Include=".git\objects\14\d8f9d577910ef895ccc8586d0e15f16518b650" />
+    <None Include=".git\objects\15\fdff7bca1ecfbac6daee2cf22f93b3bc5958cb" />
+    <None Include=".git\objects\16\f9acb0e8203c40b530774893ca7e30e2fd79e7" />
+    <None Include=".git\objects\17\54c672f2023a3914be2bb9746c5936f190655d" />
+    <None Include=".git\objects\17\8abc4a2c5935de6c76399d093ccfed5b1e0da2" />
+    <None Include=".git\objects\18\a32d9411bf6af78c980c5a1e2282f67967e442" />
+    <None Include=".git\objects\19\7e7f9671921c9c0cf5863cb94c84c3e9766db5" />
+    <None Include=".git\objects\1a\eed3ae0bb83e0a605152f6cf267839347fa7db" />
+    <None Include=".git\objects\1b\ec25926bd5e0f2bed7487467877372ede04622" />
+    <None Include=".git\objects\1c\2febdea47c9cf7f99aca98b2716378c85f33ac" />
+    <None Include=".git\objects\1d\b66ab8f8c75199f4e137c5e0af8e6c45182055" />
+    <None Include=".git\objects\1e\05b62ce4b9bfcc1ebf4a6b4874479aae3b308c" />
+    <None Include=".git\objects\1e\0a4b6fa263ad11bf5b958ac2d3734587392783" />
+    <None Include=".git\objects\1e\0fb8a5366d55ee7f3281e2e9e8dd9b97cf18d2" />
+    <None Include=".git\objects\1e\4369cb90e73164a3fa9b984b1ec4f8d1cb7740" />
+    <None Include=".git\objects\1e\51537e00b887c99780dafeabd0bb750e0e59f8" />
+    <None Include=".git\objects\1e\51bc0781d6f0575c7100aec6d9c45795e6a809" />
+    <None Include=".git\objects\1e\dbabc81cebc63a067d9ec5ce846160f56a1aa5" />
+    <None Include=".git\objects\20\36c9d3d94d874df4fb9e4cac6017666cafd4bf" />
+    <None Include=".git\objects\20\66d9428a99cefefc9e7b0531184cda3b4eb9c2" />
+    <None Include=".git\objects\21\5c1a6728b054ab61dcd6dc7ebec21369a1c4e5" />
+    <None Include=".git\objects\23\23cbaf7a1e7d525258326764e17be64aee6feb" />
+    <None Include=".git\objects\24\327c225b87bce202550ee3272fead667f843ab" />
+    <None Include=".git\objects\24\89b425efe163ed5e10c8143a31e3dcf0551b4a" />
+    <None Include=".git\objects\25\a6b8945be7b5d0192766b5a02de5d6997b3800" />
+    <None Include=".git\objects\25\f3feb4ed5984dc7f215185c23bc58bde08da9f" />
+    <None Include=".git\objects\26\40eb25eaff43922b76fc17188e623383516258" />
+    <None Include=".git\objects\26\a592b441661276190951c01fae4ca5778550da" />
+    <None Include=".git\objects\27\13471c7b977c5f63d4fb7f30eb45accbb3543c" />
+    <None Include=".git\objects\27\1ac3c9a2c766052f4391213e9c513c9cc5f8a7" />
+    <None Include=".git\objects\27\a3219876d21e6542824933fa1880fd662e1b38" />
+    <None Include=".git\objects\28\2fbd46727faee79da4da9e1988a3d46f3e95e5" />
+    <None Include=".git\objects\28\8995b397fdbef1fb7e85afd71445d5de1952c5" />
+    <None Include=".git\objects\28\a905c1528f61b60058ef3d01d5a3706c6062a4" />
+    <None Include=".git\objects\28\f4e257f8beec023aaee55432b90b83d93d4531" />
+    <None Include=".git\objects\2a\275aea7748dd171dc76c54176a251bcb07451f" />
+    <None Include=".git\objects\2a\6304077e2845c1097df327681178e09a55fcad" />
+    <None Include=".git\objects\2a\9912d9004c2076a541cd55b864595d5633bc6d" />
+    <None Include=".git\objects\2a\b24a81640e04c8f5a2a632e8e6e6e771934834" />
+    <None Include=".git\objects\2c\0ff82dccc71ec5ef26af999cf8e1c0b5b81c3b" />
+    <None Include=".git\objects\2c\9dde5a73c75ac05d1ecc18e1fb5df97af2c72e" />
+    <None Include=".git\objects\2c\b4208925227d98c5f6a64b6c782a06a52cf0d9" />
+    <None Include=".git\objects\2d\86e3e998c42e777aed3496a4ff7d416c02b41d" />
+    <None Include=".git\objects\2f\d75aab0424c1f9cfc408356846760683d760ee" />
+    <None Include=".git\objects\2f\f89fb025d4bc1e365a046055b567522ab123d5" />
+    <None Include=".git\objects\30\dea355f7e83b5392b9ad2bc6449b01a480bed3" />
+    <None Include=".git\objects\31\0a9cf4ec4ef4175cdd33dd0c26a601ba31486c" />
+    <None Include=".git\objects\32\792bf744e5ba3d5d5ec91c691a6247dbfa88cd" />
+    <None Include=".git\objects\32\c8c32d07964df6e228ab398847bf71988f93a4" />
+    <None Include=".git\objects\33\809db25ef6b2d2c16537f7ac3bf48d219c021b" />
+    <None Include=".git\objects\33\a564cf9989e4e174e86a0613868637f7b81c59" />
+    <None Include=".git\objects\34\4fbb38a7932b48dd79a5f8ddcc57b7308966e7" />
+    <None Include=".git\objects\35\bf0859dcc647c83cd56423527ea01128e6aa0d" />
+    <None Include=".git\objects\35\ff442a6bc490b03fd427717a0e83ddd8405d45" />
+    <None Include=".git\objects\39\8b936ba5952852402e153e106142fe592df5da" />
+    <None Include=".git\objects\3a\cea8a29af0758d654463ce586ced1d519c67d4" />
+    <None Include=".git\objects\3e\79b1133fe240195d71979cb2469f60750a2f7e" />
+    <None Include=".git\objects\3e\de743bed108ec8fb958b5dff79841757e6ac0a" />
+    <None Include=".git\objects\3f\6de3e54cadaf163327e0b399f7976be3508848" />
+    <None Include=".git\objects\41\c1477fb30ed393c27fedd5d113921c49335b7e" />
+    <None Include=".git\objects\42\29b8c4e6f30e5e55aab3eeb84fa492d9bf334f" />
+    <None Include=".git\objects\42\a11c81b737ed6c0563eedf9fd77f90d1a2d49b" />
+    <None Include=".git\objects\43\71148f91b238d1b7e80d97928a2630848711a9" />
+    <None Include=".git\objects\44\7e8c42e44f33d53790d6ac7c5dd1bc3adc744d" />
+    <None Include=".git\objects\44\8307d8857b58ecec5716b2ddc4dd2dfa0cfc3c" />
+    <None Include=".git\objects\44\c879d77923b3393154805b9ca5fa3b86cb408e" />
+    <None Include=".git\objects\45\487ba56c85708c0d3fa094bb9f48726eb68f2e" />
+    <None Include=".git\objects\46\a4119781759d07dd95c53b74215fdd0da70f50" />
+    <None Include=".git\objects\47\1f764bb6ccb141d844f57e5871052a9eaf5b73" />
+    <None Include=".git\objects\47\3f1094cd93a8b4054aa2f6d2cd802d75cb9670" />
+    <None Include=".git\objects\48\e8d23d71cf93dd96c949123da215563772c2a7" />
+    <None Include=".git\objects\4a\47c25d3394b2206870ce91e32706e0f328c861" />
+    <None Include=".git\objects\4a\4d2aeff16b0af9164879167a3320cecd8c6312" />
+    <None Include=".git\objects\4a\f5ace5ce394920f6583d58be221f8ec81c25e3" />
+    <None Include=".git\objects\4b\1f8f067956f2b4bb7f01aa8eb70c30337e6ab4" />
+    <None Include=".git\objects\4b\b95f6383602b1a1ab17ad95e79e10fa336f535" />
+    <None Include=".git\objects\4c\3ce9e4170eda3b04bd2ec342db85f2018e4243" />
+    <None Include=".git\objects\50\713bd13dfa7e31ad9afe5ecad85b217139c647" />
+    <None Include=".git\objects\50\b2cce84f14dae699eb7abba24e396a9631749e" />
+    <None Include=".git\objects\50\c8ab0915ca8338f6daa872d79eb13aa84b87b6" />
+    <None Include=".git\objects\51\382fe48d99e68829f8ea3200e89e04ab957bd1" />
+    <None Include=".git\objects\51\c48bbe51a1f91f61ea0fd4609919ca5bba7d19" />
+    <None Include=".git\objects\51\e1eb82687b01a20e611a03ee74479b6585a16b" />
+    <None Include=".git\objects\53\a7d41ad4e22b17c262f9d4e8886a002e26a618" />
+    <None Include=".git\objects\55\1d7c1170798cac795e3f8f708431a51428d20c" />
+    <None Include=".git\objects\55\9fc21b901b9ce2cb23f82c987198cbb71baa21" />
+    <None Include=".git\objects\56\4e02eb58b1113d7d9235122945300f1325c917" />
+    <None Include=".git\objects\57\034b82b999dea4d494acd2c4cdef01b9ed4c0f" />
+    <None Include=".git\objects\57\211fa34608793146aba7f5adb88dc5ae7ebe69" />
+    <None Include=".git\objects\5b\dd5c12ad1add4b110cce8ef83196a210182e51" />
+    <None Include=".git\objects\5d\e2aa3774a19cdd8fd3d6527418c2a293f3ec93" />
+    <None Include=".git\objects\5d\e6dc242d440ca8e838f3e84b56d7dfb83fb56d" />
+    <None Include=".git\objects\61\150ed12c93e45dbb8bfc6b34afa030191365fb" />
+    <None Include=".git\objects\62\7156da94fc503a3bda3dc3dfb7d06f7ac1ee34" />
+    <None Include=".git\objects\63\ac6218e12262bc629d584a161d3e2b6540b294" />
+    <None Include=".git\objects\64\265c072a1762635755b7c43ffa2be1f22a5f25" />
+    <None Include=".git\objects\64\2b130a9e64778824bf9aad4aba2c871d656f06" />
+    <None Include=".git\objects\64\6ffac910c2184672f3235b197a6e37bbf72a74" />
+    <None Include=".git\objects\65\71007cb48aeb42e0a98386eb2c9a002a78ec42" />
+    <None Include=".git\objects\65\c373013ed6aa39be0526f53c6ab05654e710cf" />
+    <None Include=".git\objects\65\fa3aa8e965ca60e29a21aeed3deed8b1bf3ff8" />
+    <None Include=".git\objects\66\aee63f0fa793da4cda1fb9a1f1213aa6075015" />
+    <None Include=".git\objects\67\102bb9ff01ab304f80f44f325dd93af98ef803" />
+    <None Include=".git\objects\67\9834edb147af656e6321c1c1d6d95737d5171c" />
+    <None Include=".git\objects\69\3ad9a6e413c69c81c7050d2150a8181f5b571d" />
+    <None Include=".git\objects\69\c6280665f136ef59f622083e00825c468e9502" />
+    <None Include=".git\objects\69\f794fdcd909042a48040d06bfa672b529a9d9e" />
+    <None Include=".git\objects\6a\acf6eb49182cb3a6872829ded941f090d30f80" />
+    <None Include=".git\objects\6c\d57002a6824db108027eebae9eef8bfee25862" />
+    <None Include=".git\objects\6c\fe0a76cd6b8ecf99626e261a184d013f15a59a" />
+    <None Include=".git\objects\6d\08bddb3f7302656a61a7a0d17bc00b5e9a6cda" />
+    <None Include=".git\objects\6e\2a22562e8da73e7dbec96b74993e25f9c79ade" />
+    <None Include=".git\objects\6f\8cedf569c86493d5bb7de6ab3f320d29747d22" />
+    <None Include=".git\objects\6f\ede37d89f6ff829980970751aa0ab9ca847a9a" />
+    <None Include=".git\objects\70\9130042f37e14ac37bcf87fcc366100abc8871" />
+    <None Include=".git\objects\72\17c7d8dc305889ce3d3e4258b26b230b95c518" />
+    <None Include=".git\objects\72\dccc06ca3c2a516ddf46cbe4c2519662e1db2e" />
+    <None Include=".git\objects\73\5f57adb5dfc01886d137b4e493d7e97cf13af3" />
+    <None Include=".git\objects\73\85b56c0e4d3c6b0efe3324aa1194157d837826" />
+    <None Include=".git\objects\74\0a346244594fcc6dde5a3fd1b9672d9b35f755" />
+    <None Include=".git\objects\74\1d81964f51d2b1fdf43002ae18645aadb4336c" />
+    <None Include=".git\objects\75\73960d562bf359877facbb95c49256ab1d08e7" />
+    <None Include=".git\objects\75\ce347ed88f814409bc22582856dd911bc8cc9d" />
+    <None Include=".git\objects\77\3ae48d5b35f89594ded193ac6a40b0b94dd714" />
+    <None Include=".git\objects\78\354c03702bd26c92eed588de639e1f2883e4f5" />
+    <None Include=".git\objects\78\c53eda9b6d6e4edf78a9d47d510696d7b09062" />
+    <None Include=".git\objects\79\9262ca9fbe349106258b93ea1fbd4e197e4bd5" />
+    <None Include=".git\objects\7a\0eabddf4aee6899d5bffd0c2be6025bacef373" />
+    <None Include=".git\objects\7a\7966539f5241214b963c331eee7d4307d6b71d" />
+    <None Include=".git\objects\7a\c15cc77265fd6e979dd10982a51ea02118e0b4" />
+    <None Include=".git\objects\7a\f06c7f051692de5ed28bfd2633b8b1019621ba" />
+    <None Include=".git\objects\7b\a218dc12fd488ba4c5934ef8799ee8a4ffdf17" />
+    <None Include=".git\objects\7c\5336f0bd13ce6f0cbb7c4434a7fbe9935be14d" />
+    <None Include=".git\objects\7c\bc84393ae4a660d5d2e59e7a17e0b1db15bb0e" />
+    <None Include=".git\objects\7c\d99742eaed5148e8383ffb57b88e33e521f46c" />
+    <None Include=".git\objects\7d\59bc7d3614d10431916ef893879564df424211" />
+    <None Include=".git\objects\7e\5027f5a60331bc0b09d4170b6bdb213666967b" />
+    <None Include=".git\objects\80\f41e3388dc3d0ce8f662bce12671d62359bfef" />
+    <None Include=".git\objects\81\517ee6e719e4ad9e82f45a9c57d9ed6b94d143" />
+    <None Include=".git\objects\83\bdccb8af20b2acb5bae6156ecdb430c24695b5" />
+    <None Include=".git\objects\84\f4ab2c75b7a0f59ca8d36e0d62eaca1861a560" />
+    <None Include=".git\objects\85\d0c72e1b2211addffb22f7d8da5e2a63d18f87" />
+    <None Include=".git\objects\88\105043f96f0c3c7bd72b7d4f625471f5d46031" />
+    <None Include=".git\objects\89\a77bde11189637ee6fba2bf0f6b134722180dd" />
+    <None Include=".git\objects\8a\22bb1304fd58cc1ab03a9832ae888fb8e520d0" />
+    <None Include=".git\objects\8a\4bd40534c4e6aa051cf752b8ba9e3e55fe2195" />
+    <None Include=".git\objects\8d\f0a11c7d86d68cc1a9ad13130f16fbc3c91dea" />
+    <None Include=".git\objects\8e\3617f8032c231810ba25f46b9ca47b2f706bc1" />
+    <None Include=".git\objects\8e\a0c6be0d003c272dc24c436bc2ceca60a91c87" />
+    <None Include=".git\objects\8e\c74c2d5eeeacc579b54a4a0be4d7a7f6475779" />
+    <None Include=".git\objects\8f\3c55dccf0e98ac90c7a2d28eedc24b6732663e" />
+    <None Include=".git\objects\8f\491d4995847f8d72cd3b6b5761eb011c856764" />
+    <None Include=".git\objects\8f\5614b50612ffb31d1e60810b50b4c2462af16d" />
+    <None Include=".git\objects\8f\9f7de58289237c37815ec4b1dc135085b8a4a8" />
+    <None Include=".git\objects\8f\f445590015953cd51096c89ee1f9d8b3dc7430" />
+    <None Include=".git\objects\90\9bbac67c5680376da3a71161a5774d371ae667" />
+    <None Include=".git\objects\92\25ff273c5e53af5128cdff6af2b8eec54f2508" />
+    <None Include=".git\objects\92\531f28432256fede9cc83cbdb60c3c1535915c" />
+    <None Include=".git\objects\92\bf3b5fcdecc3c10f0ea6ef56690e8572bcbbcb" />
+    <None Include=".git\objects\93\02de142b4bf2ab44746f3306bc31c0922b83c8" />
+    <None Include=".git\objects\93\617f736f4613253996556f191961f93efbed0b" />
+    <None Include=".git\objects\93\769f16184c4893865363727824c85973803603" />
+    <None Include=".git\objects\93\a635edf36079629f383c7c4736f21cbadfbbd6" />
+    <None Include=".git\objects\93\b8c19f8c3aa758d0231eead264cfa839141dc3" />
+    <None Include=".git\objects\94\b0385282344734648fbcc1cc79429db588aa04" />
+    <None Include=".git\objects\95\41ef8a17a02a7f0d8ebb5e06eef5dae098ff0f" />
+    <None Include=".git\objects\97\0f3ae6881722cf72508fd6018a601723cd9896" />
+    <None Include=".git\objects\97\3425a978c028269b6134f83f14fccff5450644" />
+    <None Include=".git\objects\98\28032f79c4f86d9cf7bd9b3d85d392414c0681" />
+    <None Include=".git\objects\99\fcaa9326ba4ddc451b0c4a3f2c760ad4c1dbb2" />
+    <None Include=".git\objects\9a\31a0b50a2b35ca2dfefe36fbfec975894915a4" />
+    <None Include=".git\objects\9a\547d6a72216f562205a78086b50af13181520e" />
+    <None Include=".git\objects\9c\5264946faac5ee0940d1802304222f5a7a09a7" />
+    <None Include=".git\objects\9c\6367a919edd88072c44bcf96c236ca0e68e7a5" />
+    <None Include=".git\objects\9d\3f51e146d45e699109bcb7045a00321710aa81" />
+    <None Include=".git\objects\9e\b397ab564f60b036542e3e595ff95e849cd093" />
+    <None Include=".git\objects\9e\edf598f85ab302229e8d9a9ba07b8029ef451d" />
+    <None Include=".git\objects\a1\f8fa7ea0217437b49136e52b46e16d357d17d3" />
+    <None Include=".git\objects\a3\19c12e0c5978f8d2a55d10d14d7bc7289bcfe1" />
+    <None Include=".git\objects\a3\64460d88e00b7aa452686ef42540d04b4a89e0" />
+    <None Include=".git\objects\a3\7008b8bcbea47f4903cc2ce872131d0c276519" />
+    <None Include=".git\objects\a4\c3c21ecbaddc79b58478007bc4c4a5c4e0ec54" />
+    <None Include=".git\objects\a5\877e83a8399a8b5c1d1131610e948bfad716b4" />
+    <None Include=".git\objects\a5\e2c22308515271f01df5a5e7995ed97b3b7d14" />
+    <None Include=".git\objects\a6\6ef5f4fe298f35f9c4da070caa0a2d75f0cf44" />
+    <None Include=".git\objects\a8\38f37206f7c1466f054b41a4de9d252d92ed9f" />
+    <None Include=".git\objects\a8\7db095508a00629f5617fb7e48bdec7729c05c" />
+    <None Include=".git\objects\a8\c943592ddd8f088448e4135759f8f916120c8b" />
+    <None Include=".git\objects\a9\62377a59f73c4126805bb401d865d883353a2c" />
+    <None Include=".git\objects\a9\75480199a7648689449076df98fe9a176f9ee8" />
+    <None Include=".git\objects\a9\d0cd5bb64a5d561537a3cdb25e34c528c08400" />
+    <None Include=".git\objects\ab\7517cd1afb814069157747216f35fdc1c8eec9" />
+    <None Include=".git\objects\ac\1c8629b990cb3ba020626bc9be8d54ffac1779" />
+    <None Include=".git\objects\ac\9ceb111fa3b521a84df86e7b0c1c7a981eae52" />
+    <None Include=".git\objects\ac\cf84dd5d750e13c1d3970d1e78192bbb916d3a" />
+    <None Include=".git\objects\ae\717d30691348a28a91256c198465c08d3a9036" />
+    <None Include=".git\objects\af\299276e7a9c6d26e7fa23a54d73e751f34972a" />
+    <None Include=".git\objects\af\49fec1a5484db1d52a7f9b5ec90a27c7030186" />
+    <None Include=".git\objects\b0\431409eabe69d7a5497cf09e06598306ca7974" />
+    <None Include=".git\objects\b0\5d71ff493b3ead55678cc6cfa9fabe82a8895b" />
+    <None Include=".git\objects\b0\b8855bd968852df4959192a7fc092ac36a41c1" />
+    <None Include=".git\objects\b1\6c58ab3e1afc5503c7b9b31df60c21a6699257" />
+    <None Include=".git\objects\b1\ffcaa619604d9b4e57ad0f153c9d845d902af4" />
+    <None Include=".git\objects\b2\7edd1b44dd5731f9f1f748fde728b7d1047303" />
+    <None Include=".git\objects\b2\97aa2cf0f5cd9fc6c2965e9fccdddf68359c4f" />
+    <None Include=".git\objects\b3\c6ab454874b6ea08552b0f83dd983183bb59e7" />
+    <None Include=".git\objects\b4\12d5c32abd922d8bfec00d912b88f0606aafb4" />
+    <None Include=".git\objects\b5\2f8536c21ea3453f36348699911f887fc80fc6" />
+    <None Include=".git\objects\b6\66c44b77a20ff1bab0cb2be5577876da8edfe4" />
+    <None Include=".git\objects\b6\e61db8b4f32c9acee7eb4e9e4674ee25b394c3" />
+    <None Include=".git\objects\b7\2177048570009c2ef85426f17791bc04106921" />
+    <None Include=".git\objects\ba\4764daef0eb5cbdf7132132ae6f1f5c70bffaf" />
+    <None Include=".git\objects\ba\d2393df5c93c71d16d4901381deba705d529cc" />
+    <None Include=".git\objects\bb\05ab911bce05c1c00dc34504e550ba797a6c33" />
+    <None Include=".git\objects\bd\75208da3faf1f2192aa6975479a3a35a278d13" />
+    <None Include=".git\objects\be\fbd29f85ff210cab3e5fbba66272292b5e66e4" />
+    <None Include=".git\objects\bf\af55f60ca787f9d89a44ec3b7deb4140af91fa" />
+    <None Include=".git\objects\c1\ef80557d555665564756ceb3aa75318d6694ae" />
+    <None Include=".git\objects\c1\f22fbc23bb6ee67824843d6685826db10313d3" />
+    <None Include=".git\objects\c3\6e428ffbe1d07fbb2bd17f34e5bb24d5971c9f" />
+    <None Include=".git\objects\c5\3911ca4cc09f4fadf7dfd25eaecb1a6869c6f0" />
+    <None Include=".git\objects\c5\66177cbe049fbc66c4b5c4e38aa65bc0dab9ec" />
+    <None Include=".git\objects\c8\11b002e920b55b1a1fc3d64c798b6988aa4729" />
+    <None Include=".git\objects\c8\c0e9447186ea67c6ad5f903f072943e093a349" />
+    <None Include=".git\objects\ca\4a23a7d6695a5c6b935cc67d616f985734b0b5" />
+    <None Include=".git\objects\cb\6045ec5994ede7b4a68fc979d1d14851a1d2cd" />
+    <None Include=".git\objects\cb\7549642799170caaeb795f79dedeb872d2cc55" />
+    <None Include=".git\objects\cc\29bd384f538fe5c638f71918e10eb66c62b423" />
+    <None Include=".git\objects\cc\7b369743647151592b8812bce20547075519ee" />
+    <None Include=".git\objects\cc\b18b5633823eac54e85c689b389f6a17162b69" />
+    <None Include=".git\objects\cd\42bde3c33507ab50066c4ea473d6b05079016d" />
+    <None Include=".git\objects\ce\342a2ec8a61291ba76c54604aea7e9d20af11b" />
+    <None Include=".git\objects\cf\b6664e99e246f64584514a885d39938155bad8" />
+    <None Include=".git\objects\d0\5454df5ff49c7b267a2bcc0af94099419ac7a1" />
+    <None Include=".git\objects\d0\6205bb5d6d6b2b1dea8ab731d5a755f743cad2" />
+    <None Include=".git\objects\d1\852c7e0de65ceee2ffb705fddaa47bd60ce95a" />
+    <None Include=".git\objects\d1\bf64ecaeeef1dae4c4f506e834a9feec9ea36b" />
+    <None Include=".git\objects\d2\39043d0878b87c0eed550437e00c40843293d7" />
+    <None Include=".git\objects\d2\67d58ed8241fedd1b17f8d0dceaf5399c34069" />
+    <None Include=".git\objects\d2\a0ce639ba1fa58ea35ec15aedb516a3f149f2d" />
+    <None Include=".git\objects\d2\f443f907b7ac978854641d02bd29788cd78681" />
+    <None Include=".git\objects\d4\1c543858a39b4fb9b87395b653113bc5e060b8" />
+    <None Include=".git\objects\d5\b19b6fe2be1be2b82a67162a5df5b71cedc4df" />
+    <None Include=".git\objects\d5\b9bf47c316b732e7002a67fed5c0661afe18e6" />
+    <None Include=".git\objects\d5\d00a8f8287a2b98b5054ea6ba402bde78c037d" />
+    <None Include=".git\objects\d6\1761b34fac21bf79ebd448af201eeef1bb4390" />
+    <None Include=".git\objects\d8\12899734c19c88f3c045ddcbc0b1c954522a24" />
+    <None Include=".git\objects\d8\1379c1603014d8a43f8c86c497e09ac0ca19f9" />
+    <None Include=".git\objects\d8\7d287fb09b22e9363c624ecb3cb11b25fdbdb8" />
+    <None Include=".git\objects\d8\960ae0ba92c6caaf299fc2667be6854661469e" />
+    <None Include=".git\objects\d9\6b501771bfdea7806201df9edb9be1d03d4c45" />
+    <None Include=".git\objects\d9\70c73e6898bc78c24952c0f88786ece269916c" />
+    <None Include=".git\objects\da\8e08c0beac221cb765d57d1676845c1c4ea8da" />
+    <None Include=".git\objects\db\329296b39a0b25b0fa5e8bf926683359e50b30" />
+    <None Include=".git\objects\db\bbac7bb3881af960f3d7913176fea393fe04ac" />
+    <None Include=".git\objects\dc\03e246e0fec76baafd3f95e77155ca1e764159" />
+    <None Include=".git\objects\dd\cb675230aa44e616cbc50d78fa20dd3795cd3e" />
+    <None Include=".git\objects\df\9fcaaafd0bc30b29d3ebe6523e773ed43188e7" />
+    <None Include=".git\objects\df\c8198ad12224aafeba938b408eca41e0ba94a0" />
+    <None Include=".git\objects\e0\7036e2b8e5b29b6cab57c494cf0c190cbf74c0" />
+    <None Include=".git\objects\e2\3c9a95d59a37be8a3230d337b6ac68e1c2ba5d" />
+    <None Include=".git\objects\e2\7ee1ff5ba4e0d0d5186645e89175fe675bc35a" />
+    <None Include=".git\objects\e3\1d841126f8e1c0f51536a8d61f9d95059a5c4f" />
+    <None Include=".git\objects\e3\e673ac8a5a95cf101562ffc7ab5dba8d008ab5" />
+    <None Include=".git\objects\e4\c14aa3cc36e151c28689ac52d9e266c283c2a8" />
+    <None Include=".git\objects\e4\c9114c9edbe6cc7a11844628114f1a886843ae" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\e7\c3b8a5991d56cee5affd1cc76e493f2b30d149" />
+    <None Include=".git\objects\e8\ccf99a1689783695ab010c6424512973a15af9" />
+    <None Include=".git\objects\e9\a945ae15036b963308d65c9eba86aabbb8ae38" />
+    <None Include=".git\objects\e9\cf0abbbb316e45e1630cf66593b82d3984120d" />
+    <None Include=".git\objects\e9\f8f6a45f5b796de31b65618b19e63ff15e8427" />
+    <None Include=".git\objects\ec\57c2c8b1910f4d408944a112b3e672378060d8" />
+    <None Include=".git\objects\ed\3993ef373711139e8dc18892bb9f33ebb3d0fb" />
+    <None Include=".git\objects\ee\9acdaccfa5f006e5b0170b2d479ace8c2c6374" />
+    <None Include=".git\objects\ee\a77bbcd5391fef02917f444df327ced8fd8640" />
+    <None Include=".git\objects\ee\b535cd4974a8c95349869aff3aba9b00410244" />
+    <None Include=".git\objects\ee\c8af77660e2f4e9e757f773a4b47eb9b1254c0" />
+    <None Include=".git\objects\ef\756c4fc96334866d4535a3973060eebcecf469" />
+    <None Include=".git\objects\f0\4420d5fac5e76447d866fc37fc150e98bbc54a" />
+    <None Include=".git\objects\f0\9ccd6aa5857b0263a69d0001926fd262d4413a" />
+    <None Include=".git\objects\f1\6b0718d4291a5c1f68a43b459a70099b7a386c" />
+    <None Include=".git\objects\f2\374dec6bb1eb3ae86c5e4f47d59fbe345b48ae" />
+    <None Include=".git\objects\f3\0bbe519794624248dc739acc640ed76c5d80e6" />
+    <None Include=".git\objects\f3\6c64c64b6deacc6570b68b84a4877b4cfe418e" />
+    <None Include=".git\objects\f4\487569da40780e9f3a6d00e29f7e25efcf2dec" />
+    <None Include=".git\objects\f5\010698a95adfd8dfdd27ac2d48222fb01e6d1d" />
+    <None Include=".git\objects\f5\75d8ce8de8ec04d47167d6d867e522f827367a" />
+    <None Include=".git\objects\f6\967be7a8eb75b8e19a65bf961e9ac41df43aed" />
+    <None Include=".git\objects\f6\c02ce97e0a802b85f6021e822c89f8bf57d5cd" />
+    <None Include=".git\objects\f8\eeaab139c36d38ef63ca4c041980f9bc5094c1" />
+    <None Include=".git\objects\f9\1328b1d2a05d04f619f749780f499a39dac7c4" />
+    <None Include=".git\objects\fa\31624a9827d8f5a73ebb78c49d4f2d086207e3" />
+    <None Include=".git\objects\fa\383b88a6cb8a81eec52200820d4b30aaa6c564" />
+    <None Include=".git\objects\fd\ed23739675ddd3543821929deec4722f062102" />
+    <None Include=".git\objects\fe\2ec6ffb7623e1c7a03c58454fdb956b0f0931d" />
+    <None Include=".git\objects\fe\65e696b0ec6a6d7332bc8ce9156d1a79a23c86" />
+    <None Include=".git\objects\ff\329f3562acf5c3f5e41aa4090be3dd16c2e6d2" />
+    <None Include=".git\objects\ff\b8e6030f1f85a63f293c78cfba65c029f2f695" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include="FlashCards\bin\x86\Debug\AppX\resources.pri" />
+    <None Include="FlashCards\bin\x86\Debug\AppX\vs.appxrecipe" />
+    <None Include="FlashCards\bin\x86\Debug\AppX\WinMetadata\Windows.winmd" />
+    <None Include="FlashCards\FlashCards_TemporaryKey.pfx" />
+    <None Include="FlashCards\obj\ARM\Debug\CoreCompileInputs.cache" />
+    <None Include="FlashCards\obj\ARM\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FlashCards\obj\x86\Debug\CoreCompileInputs.cache" />
+    <None Include="FlashCards\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="FlashCards\obj\x86\Debug\embed.resfiles" />
+    <None Include="FlashCards\obj\x86\Debug\embed.resfiles.intermediate" />
+    <None Include="FlashCards\obj\x86\Debug\Template10Library.pri" />
+    <None Include="FlashCards\Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FlashCards\project.json" />
+    <None Include="FlashCards\project.lock.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlashCards\Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="FlashCards\Assets\SplashScreen.scale-200.png" />
+    <Content Include="FlashCards\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="FlashCards\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="FlashCards\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="FlashCards\Assets\StoreLogo.png" />
+    <Content Include="FlashCards\Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\AppxManifest.xml" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\SplashScreen.scale-200.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\StoreLogo.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\clrcompression.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\clrjit.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\entrypoint\FlashCards.exe" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\FlashCards.exe" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\FlashCards.xr.xml" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Microsoft.CSharp.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Microsoft.VisualBasic.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Microsoft.Win32.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\Properties\Default.rd.xml" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.AppContext.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Buffers.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Collections.Concurrent.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Collections.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Collections.Immutable.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Collections.NonGeneric.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Collections.Specialized.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ComponentModel.Annotations.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ComponentModel.DataAnnotations.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ComponentModel.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ComponentModel.EventBasedAsync.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Core.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Data.Common.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Diagnostics.Contracts.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Diagnostics.Debug.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Diagnostics.StackTrace.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Diagnostics.Tools.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Diagnostics.Tracing.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Dynamic.Runtime.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Globalization.Calendars.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Globalization.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Globalization.Extensions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.Compression.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.Compression.ZipFile.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.FileSystem.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.IsolatedStorage.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.IO.UnmanagedMemoryStream.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Linq.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Linq.Expressions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Linq.Parallel.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Linq.Queryable.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.Http.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.Http.Rtc.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.NameResolution.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.NetworkInformation.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.Requests.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.Sockets.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.WebHeaderCollection.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.WebSockets.Client.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Net.WebSockets.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Numerics.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Numerics.Vectors.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Numerics.Vectors.WindowsRuntime.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ObjectModel.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Private.DataContractSerialization.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Private.ServiceModel.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Private.Uri.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Context.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.DispatchProxy.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Emit.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Emit.ILGeneration.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Emit.Lightweight.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Extensions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Metadata.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Reflection.TypeExtensions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Resources.ResourceManager.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Extensions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Handles.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.InteropServices.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.InteropServices.WindowsRuntime.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Numerics.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Serialization.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Serialization.Json.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Serialization.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.Serialization.Xml.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.WindowsRuntime.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Runtime.WindowsRuntime.UI.Xaml.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Claims.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Cryptography.Cng.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Security.Principal.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.Duplex.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.Http.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.NetTcp.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.Primitives.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.Security.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.ServiceModel.Web.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Text.Encoding.CodePages.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Text.Encoding.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Text.Encoding.Extensions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Text.RegularExpressions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.Overlapped.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.Tasks.Dataflow.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.Tasks.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.Tasks.Parallel.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Threading.Timer.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Windows.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.Linq.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.ReaderWriter.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.Serialization.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.XDocument.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.XmlDocument.dll" />
+    <Content Include="FlashCards\bin\x86\Debug\AppX\System.Xml.XmlSerializer.dll" />
+    <Content Include="FlashCards\FlashCards.csproj" />
+    <Content Include="FlashCards\FlashCards.csproj.user" />
+    <Content Include="FlashCards\obj\x86\Debug\FlashCards.xr.xml" />
+    <Content Include="FlashCards\obj\x86\Debug\intermediatexaml\FlashCards.exe" />
+    <Content Include="FlashCards\obj\x86\Debug\intermediatexaml\FlashCards.pdb" />
+    <Content Include="FlashCards\obj\x86\Debug\Template10Library.dll" />
+    <Content Include="FlashCards\obj\x86\Debug\Template10Library\Properties\Template10Library.rd.xml" />
+    <Content Include="FlashCards\obj\x86\Debug\Template10Library\Template10Library.xr.xml" />
+    <Content Include="FlashCards\obj\x86\Debug\XamlSaveStateFile.xml" />
+    <Content Include="FlashCards\Properties\Default.rd.xml" />
+    <Content Include="UpgradeLog.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="FlashCards\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\CreateFlashCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\NewDeckPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\obj\x86\Debug\Template10Library\Controls\HamburgerMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\obj\x86\Debug\Template10Library\Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\obj\x86\Debug\Template10Library\Themes\HamburgerMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\obj\x86\Debug\Template10Library\Themes\ModalDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\obj\x86\Debug\Template10Library\Themes\PageHeader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\obj\x86\Debug\Template10Library\Themes\Resizer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FlashCards\OpenDeck.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FlashCards\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCards\Constants.cs" />
+    <Compile Include="FlashCards\CreateFlashCard.xaml.cs">
+      <DependentUpon>CreateFlashCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCards\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCards\NewDeckPage.xaml.cs">
+      <DependentUpon>NewDeckPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCards\obj\ARM\Debug\App.g.cs" />
+    <Compile Include="FlashCards\obj\ARM\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FlashCards\obj\ARM\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FlashCards\obj\ARM\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\App.g.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\App.g.i.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\BlankPage1.g.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\BlankPage1.g.i.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\CreateFlashCard.g.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\CreateFlashCard.g.i.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\MainPage.g.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\MainPage.g.i.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\NewDeckPage.g.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\NewDeckPage.g.i.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\OpenDeck.g.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\OpenDeck.g.i.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="FlashCards\obj\x86\Debug\XamlTypeInfo.g.cs" />
+    <Compile Include="FlashCards\OpenDeck.xaml.cs">
+      <DependentUpon>OpenDeck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCards\Properties\AssemblyInfo.cs" />
+    <Compile Include="FlashCards\ThumbnailToImageConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\branches\" />
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\" />
+    <Folder Include="FlashCards\bin\ARM\Debug\" />
+    <Folder Include="FlashCards\bin\ARM\Release\" />
+    <Folder Include="FlashCards\bin\x64\Debug\" />
+    <Folder Include="FlashCards\bin\x64\Release\" />
+    <Folder Include="FlashCards\bin\x86\Debug\AppX\microsoft.system.package.metadata\" />
+    <Folder Include="FlashCards\bin\x86\Debug\Core\" />
+    <Folder Include="FlashCards\bin\x86\Debug\Images\" />
+    <Folder Include="FlashCards\bin\x86\Release\" />
+    <Folder Include="FlashCards\Images\" />
+    <Folder Include="FlashCards\obj\ARM\Debug\intermediatexaml\" />
+    <Folder Include="FlashCards\obj\ARM\Debug\TempPE\" />
+    <Folder Include="FlashCards\obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

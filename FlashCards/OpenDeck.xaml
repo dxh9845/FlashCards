@@ -19,10 +19,10 @@
         <GridView x:Name="DeckGrid" Grid.Row="1" Margin="20" IsItemClickEnabled="True" ItemClick="GoToDeck">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="data:StorageFolder">
-                    <StackPanel Margin="10">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE188;" FontSize="50" />
-                        <TextBlock FontSize="25" Text="{x:Bind Name}"></TextBlock>
-                        <TextBlock FontSize="20" Text="{x:Bind Properties}"></TextBlock>
+                    <StackPanel Margin="10" HorizontalAlignment="Center">
+                        <TextBlock TextAlignment="Center" FontFamily="Segoe MDL2 Assets" Text="&#xE188;" FontSize="50" />
+                        <TextBlock TextAlignment="Center" FontSize="25" Text="{x:Bind Name}"></TextBlock>
+                        <TextBlock TextAlignment="Center" FontSize="20" Text="{x:Bind Properties}"></TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </GridView.ItemTemplate>

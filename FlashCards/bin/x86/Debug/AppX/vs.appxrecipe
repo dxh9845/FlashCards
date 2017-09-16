@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-09T06:58:32.845</Modified>
+      <Modified>2017-01-09T07:10:30.246</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\FlashCards.exe">
       <PackagePath>entrypoint\FlashCards.exe</PackagePath>
-      <Modified>2017-01-09T06:58:31.924</Modified>
+      <Modified>2017-01-09T07:10:28.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\danie\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -541,11 +541,11 @@
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-09T06:44:10.963</Modified>
+      <Modified>2017-01-09T07:10:29.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\danie\documents\visual studio 2017\Projects\FlashCards\FlashCards\bin\x86\Debug\Core\FlashCards.exe">
       <PackagePath>FlashCards.exe</PackagePath>
-      <Modified>2017-01-09T06:58:32.839</Modified>
+      <Modified>2017-01-09T07:10:30.236</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

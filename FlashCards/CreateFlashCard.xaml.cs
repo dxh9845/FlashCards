@@ -283,8 +283,6 @@ namespace FlashCards
                     await WriteWithStream(folder, CardIndex, 'A', inkCanvas.InkPresenter);
                     await WriteWithStream(folder, CardIndex, 'B', inkCanvas2.InkPresenter);
                 }
-                    
-
             }
 
         }
